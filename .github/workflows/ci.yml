@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         run: pytest
         env:
-        PYTHONPATH: ${{ github.workspace }}
+          PYTHONPATH: ${{ github.workspace }}
 
   build:
     needs: test
